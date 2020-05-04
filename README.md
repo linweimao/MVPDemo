@@ -1,7 +1,7 @@
 
 ### 1、什么是MVP
 MVP，全称 Model-View-Presenter。它是从 MVC中演变过来的，它的基本思想是相通的；在MVP中，**View更加专注于处理数据的可视化以及用户交互，让Model专注于数据的处理**，而Presenter则，提供 **View 与 Model 之间数据的纽带**，用于交互与数据传输；如下面这张图：
-![在这里插入图片描述](https://img-blog.csdn.net/20170409164517040)
+(https://img-blog.csdn.net/20170409164517040)
 可以看到，在View 与 Model 之间我们是通过 Presenter，也就是 interface 来实现view 与数据的交互的，大大降低耦合，方便进行单元测试。至于与 MVC 的异同，自行google吧，这里就不细说了。
 
 其实，自己在写代码的时候，心中有个概念就好了，**view 就是UI，model就是数据处理，而persenter 则是他们的纽带**。心中有个轮廓，写起来就不那么费劲了。
