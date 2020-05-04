@@ -25,6 +25,7 @@ MVP，全称 Model-View-Presenter。它是从 MVC中演变过来的，它的基�
  ![image](https://img-blog.csdn.net/20170409165058906)
 非常简单，就是获取 EditText的数据，保存在数据库，然后重新把它读取出来，结构图如下：
  ![image](https://img-blog.csdn.net/20170409165221409)
+
 首先，从上面的效果图来看，我们需要 name 和 password 这两个字符串，我们需要新建一个 User 类，由于要用到 LitePal ，所以让它继承 DataSupport；如果你使用自己写的，那就不用继承啥了。
 ```java
 public class User extends LitePalSupport {
