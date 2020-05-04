@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="File"/>
+    <version value="1"/>
+
+    <list>
+        <mapping class="com.lwm.mvp.bean.User"/>
+    </list>
+</litepal>
