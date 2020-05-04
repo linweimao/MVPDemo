@@ -1,7 +1,7 @@
 
 ### 1、什么是MVP
 MVP，全称 Model-View-Presenter。它是从 MVC中演变过来的，它的基本思想是相通的；在MVP中，**View更加专注于处理数据的可视化以及用户交互，让Model专注于数据的处理**，而Presenter则，提供 **View 与 Model 之间数据的纽带**，用于交互与数据传输；如下面这张图：
-(https://img-blog.csdn.net/20170409164517040)
+ ![image](https://img-blog.csdn.net/20170409164517040)
 可以看到，在View 与 Model 之间我们是通过 Presenter，也就是 interface 来实现view 与数据的交互的，大大降低耦合，方便进行单元测试。至于与 MVC 的异同，自行google吧，这里就不细说了。
 
 其实，自己在写代码的时候，心中有个概念就好了，**view 就是UI，model就是数据处理，而persenter 则是他们的纽带**。心中有个轮廓，写起来就不那么费劲了。
@@ -22,9 +22,9 @@ MVP，全称 Model-View-Presenter。它是从 MVC中演变过来的，它的基�
 [https://github.com/LitePalFramework/LitePal](https://github.com/LitePalFramework/LitePal)
 
 先上效果：
-![在这里插入图片描述](https://img-blog.csdn.net/20170409165058906)
+ ![image](https://img-blog.csdn.net/20170409165058906)
 非常简单，就是获取 EditText的数据，保存在数据库，然后重新把它读取出来，结构图如下：
-![在这里插入图片描述](https://img-blog.csdn.net/20170409165221409)
+ ![image](https://img-blog.csdn.net/20170409165221409)
 首先，从上面的效果图来看，我们需要 name 和 password 这两个字符串，我们需要新建一个 User 类，由于要用到 LitePal ，所以让它继承 DataSupport；如果你使用自己写的，那就不用继承啥了。
 ```java
 public class User extends LitePalSupport {
